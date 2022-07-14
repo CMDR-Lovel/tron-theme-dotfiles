@@ -1,4 +1,3 @@
-
 # vim: filetype=i3config
 
 # This config file will use environment variables such as $BROWSER and $TERMINAL.
@@ -107,7 +106,7 @@ bindsym $mod+s        			    sticky toggle;
 bindsym $mod+Shift+s			      split toggle
 
 # d
-bindsym $mod+d                  exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -b -i -fn "AwesomeFonts" -nb "#586e76" -sf "#93a1a1" -sb "#002b36" -nf "#eee8d5" '
+bindsym $mod+d                  exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -b -i -fn "FontAwesome:bold:pixelsize=15" -nb "#586e76" -sf "#93a1a1" -sb "#002b36" -nf "#eee8d5" '
 
 # f
 bindsym $mod+f			            fullscreen toggle
