@@ -38,6 +38,7 @@ set $reboot sudo -A reboot
 set $lock i3lock
 set $suspend sudo systemctl suspend
 set $hibernate sudo -A systemctl hibernate
+set $files nemo
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -49,7 +50,7 @@ gaps outer $outer_gaps
 
 # #---Basic Bindings---# #
 bindsym $mod+Return 		         exec $term
-bindsym $mod+Shift+Return	       exec $term --working-directory  $(xcwd)
+bindsym $mod+Shift+Return	       exec $files
 
 bindsym $mod+Escape	             exec --no-startup-id dm-tool switch-to-greeter
 bindsym $mod+Shift+Escape	       exec --no-startup-id $hibernate
